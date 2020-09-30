@@ -28,8 +28,8 @@ class News( webapp.RequestHandler ):
             'entries': entries,
         }
 
-        path = os.path.join( os.path.dirname( __file__ ), 'templates/news.html' )
-        self.response.out.write( template.render( path, template_values ) )
+          path = os.path.join( os.path.dirname( __file__ ), 'templates/news.html' )
+          self.response.out.write( template.render( path, template_values ) )
 
     def post( self ):
         entry = Entry( )
@@ -44,7 +44,7 @@ class News( webapp.RequestHandler ):
 class Signup( webapp.RequestHandler ):
     def get( self ):
     
-        template_values = { }
+          template_values = { }
 
         path = os.path.join( os.path.dirname( __file__ ), 'templates/signup.html' )
         self.response.out.write( template.render( path, template_values ) )
@@ -60,7 +60,7 @@ class About( webapp.RequestHandler ):
 class Sponsors( webapp.RequestHandler ):
     def get( self ):
 
-        template_values = { }
+          template_values = { }
 
         path = os.path.join( os.path.dirname( __file__ ), 'templates/sponsors.html' )
         self.response.out.write( template.render( path, template_values ) )
@@ -68,7 +68,7 @@ class Sponsors( webapp.RequestHandler ):
 class Contact( webapp.RequestHandler ):
     def get( self ):
 
-        template_values = { }
+          template_values = { }
 
         path = os.path.join( os.path.dirname( __file__ ), 'templates/contact.html' )
         self.response.out.write( template.render( path, template_values ) )
